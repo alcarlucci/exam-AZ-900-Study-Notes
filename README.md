@@ -552,3 +552,9 @@ Descrever os recursos que deseja usar em um formato JSON declarativo - definir o
 - Azure Monitor Alerts: são formas automatizadas de se manter informado caso o Azure Monitor detecte um limite sendo ultrapassado. Os Alertas do Azure Monitor também podem tentar uma ação corretiva.
 
 - Application Insights: monitora seus aplicativos Web; consegue monitorar aplicativos que esteja em execução no Azure, localmente ou em outro ambiente de nuvem. Duas maneiras de configurar o Application Insights para ajudar a monitorar seu aplicativo: instalar um SDK em seu aplicativo ou usar o agente do Application Insights. O agente do Application Insights é compatível com C#.NET, VB.NET, Java, JavaScript, Node.js e Python.
+
+##
+
+Bons estudos!!!
+
+**André Carlucci*
