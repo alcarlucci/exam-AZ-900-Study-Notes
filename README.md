@@ -126,7 +126,7 @@ Você está essencialmente alugando ou usando um aplicativo totalmente desenvolv
 
 ## Modelo de responsabilidade compartilhada
 
-![Modelo Resp. Compartilhada](img\Mod-Resp-Compartilhada.png)
+![Modelo Resp. Compartilhada](img/Mod-Resp-Compartilhada.png)
 
 ## Infraestrutura Física - Organização Física do Azure
 
@@ -178,7 +178,7 @@ As assinaturas são uma unidade de gerenciamento, cobrança e escala.
     (relatórios de cobrança e faturas separados para cada assinatura, para organizar e gerenciar os custos)
 - assinatura fornece acesso autenticado e autorizado a serviços e produtos do Azure
 
-![Contas e Assinaturas](img\Conta-Assinaturas.png)
+![Contas e Assinaturas](img/Conta-Assinaturas.png)
 
 ### Grupos de Gerenciamento (Management Groups)
 
@@ -187,7 +187,7 @@ Fornecem um nível de escopo acima das assinaturas.
 - organiza as assinaturas em contêineres (grupos de gerenciamento) e aplica condições de governança neles
 - Grupos de gerenciamento podem ser aninhados (até 6 níveis abaixo do root)
 
-![Grupos de Gerenciamento](img\Grupos-Gerenciamento.png)
+![Grupos de Gerenciamento](img/Grupos-Gerenciamento.png)
 
 ## Serviços de Computação
 
@@ -420,7 +420,7 @@ Serviço de diretório que permite que você entre e acesse aplicativos de nuvem
 - O Azure AD DS integra-se com o seu locatário existente do Azure AD
 - Permite executar aplicativos herdados na nuvem que não podem usar métodos de autenticação modernos, realizando lift-and-shift desses aplicativos do ambiente local para um domínio gerenciado
 
-![Azure AD DS](img\Azure-AD-DS.png)
+![Azure AD DS](img/Azure-AD-DS.png)
 
 ### Autenticação
 
@@ -489,7 +489,7 @@ Uma identidade externa é uma pessoa, um dispositivo, um serviço etc. que está
   - Aplicativo
   - Dados
 
-![Defesa em Profundidade](img\Defesa-Profundidade.png)
+![Defesa em Profundidade](img/Defesa-Profundidade.png)
 
 ### Microsoft Defender para Nuvem
 
@@ -579,7 +579,7 @@ Uma identidade externa é uma pessoa, um dispositivo, um serviço etc. que está
 - O ARM é o serviço de implantação e gerenciamento do Azure que permite criar, atualizar e excluir recursos em sua conta do Azure
 - Gerenciar a infraestrutura por meio de modelos declarativos em vez de scripts. Um modelo do ARM é um arquivo JSON que define o que será implantado no Azure
 
-![ARM](img\Azure-Resource-Manager.png)
+![ARM](img/Azure-Resource-Manager.png)
 
 ### Modelos do ARM (IaC)
 
