@@ -4,6 +4,58 @@ Anotações de Estudo para Exame AZ-900 - Fundamentos do Microsoft Azure
 
 Veja as referências para o exame [AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/pt-br/learn/certifications/exams/az-900).
 
+## Computação em Nuvem
+
+Computação em nuvem é a entrega de serviços de computação por meio da Internet, possibilitando uma inovação mais rápida, recursos flexíveis e economia de escala.
+
+## Modelos de Computação em Nuvem
+
+### Nuvem Privada
+
+- As organizações criam um ambiente em nuvem em seu datacenter
+- A organização é responsável por operar os serviços que fornece
+- Não fornece acesso aos usuários fora da organização
+- O hardware deve ser comprado para inicialização e manutenção
+- As organizações têm controle total sobre os recursos e a segurança
+- As organizações são responsáveis pela manutenção e pelas atualizações de hardware
+
+### Nuvem Pública
+
+- Pertencente a serviços de nuvem ou provedor de hosting
+- Fornece recursos e serviços a várias organizações e usuários
+- Acessada via conexão de rede segura (geralmente pela Internet)
+- Nenhuma despesa de capital para escalar verticalmente
+- Os aplicativos podem ser provisionados e desprovisionados rapidamente
+- As organizações pagam apenas pelo que utilizam
+
+### Nuvem Híbrida
+
+Combina as nuvens pública e privada para permitir que os aplicativos sejam executados no local mais apropriado.
+
+- Fornece a maior flexibilidade
+- As organizações determinam onde executar seus aplicativos
+- As organizações controlam a segurança, a conformidade e os requisitos legais
+
+## CapEx e OpEx
+
+### Despesas de Capital (CapEx)
+
+- O gasto inicial de dinheiro na infraestrutura física
+- Os custos de CapEx têm um valor que é reduzido ao longo do tempo
+
+### Despesas Operacionais (OpEX)
+
+- Gastos em produtos e serviços conforme necessário, pagamento conforme o uso
+- Receber a conta imediatamente
+
+## Modelo baseado em consumo
+
+Os provedores de serviço de nuvem operam em um modelo baseado em consumo, o que significa que os usuários finais só pagam pelos recursos que usam. O pagamento é feito pelo que quer que tenha sido usado.
+
+- Melhor previsão de custos
+- São fornecidos os preços para serviços e recursos individuais
+- A cobrança é baseada no uso real
+
 ## Benefícios do uso de Serviços de Nuvem
 
 ### Alta disponibilidade (High Availability)
@@ -38,7 +90,7 @@ Veja as referências para o exame [AZ-900: Microsoft Azure Fundamentals](https:/
 
 ### Segurança (Security)
 
-### Capacidade de gerenciamento (Manageability)
+### Capacidade de gerenciamento (Manageability - Gerenciabilidade)
 
 - Gerenciamento da nuvem: diz respeito a gerenciar seus recursos de nuvem
 - Gerenciamento na nuvem: diz respeito à maneira de gerenciar seu ambiente de nuvem e seus recursos
@@ -68,9 +120,13 @@ Você está essencialmente alugando ou usando um aplicativo totalmente desenvolv
 
 - coloca a maior responsabilidade sobre o provedor de nuvem e a menor responsabilidade com o usuário
 - Cenários:
-  - Email e mensagens
-  - Aplicativos de produtividade empresarial
+  - E-mail, mensagens, calendários
+  - Aplicativos de produtividade empresarial (Office 365)
   - Controle de finanças e despesas
+
+## Modelo de responsabilidade compartilhada
+
+![Modelo Resp. Compartilhada](img\Mod-Resp-Compartilhada.png)
 
 ## Infraestrutura Física - Organização Física do Azure
 
@@ -99,12 +155,18 @@ Instâncias do Azure isoladas da instância principal do Azure
 
 ## Infraestrutura de Gerenciamento - Estrutura Organizacional do Azure
 
-### Grupos de Gerenciamento (Management Groups)
+### Recursos (Resources)
 
-Fornecem um nível de escopo acima das assinaturas.
+Bloco de construção básico do Azure. Os recursos do Azure são componentes como armazenamento, máquinas virtuais e redes que estão disponíveis para criar soluções de nuvem.
 
-- organiza as assinaturas em contêineres (grupos de gerenciamento) e aplica condições de governança neles
-- Grupos de gerenciamento podem ser aninhados (até 6 níveis abaixo do root)
+### Grupos de Recursos (Resource Groups)
+
+Agrupamentos lógicos de recursos
+
+- pode conter vários recursos
+- um recurso pode estar em apenas um grupo de recursos por vez
+- alguns recursos podem ser movidos entre grupos de recursos
+- grupos de recursos não podem ser aninhados (apenas um nível)
 
 ### Contas / Assinaturas (Subscriptions)
 
@@ -116,18 +178,16 @@ As assinaturas são uma unidade de gerenciamento, cobrança e escala.
     (relatórios de cobrança e faturas separados para cada assinatura, para organizar e gerenciar os custos)
 - assinatura fornece acesso autenticado e autorizado a serviços e produtos do Azure
 
-### Grupos de Recursos (Resource Groups)
+![Contas e Assinaturas](img\Conta-Assinaturas.png)
 
-Agrupamentos lógicos de recursos
+### Grupos de Gerenciamento (Management Groups)
 
-- pode conter vários recursos
-- um recurso pode estar em apenas um grupo de recursos por vez
-- alguns recursos podem ser movidos entre grupos de recursos
-- grupos de recursos não podem ser aninhados (apenas um nível)
+Fornecem um nível de escopo acima das assinaturas.
 
-### Recursos (Resources)
+- organiza as assinaturas em contêineres (grupos de gerenciamento) e aplica condições de governança neles
+- Grupos de gerenciamento podem ser aninhados (até 6 níveis abaixo do root)
 
-Bloco de construção básico do Azure.
+![Grupos de Gerenciamento](img\Grupos-Gerenciamento.png)
 
 ## Serviços de Computação
 
@@ -360,6 +420,8 @@ Serviço de diretório que permite que você entre e acesse aplicativos de nuvem
 - O Azure AD DS integra-se com o seu locatário existente do Azure AD
 - Permite executar aplicativos herdados na nuvem que não podem usar métodos de autenticação modernos, realizando lift-and-shift desses aplicativos do ambiente local para um domínio gerenciado
 
+![Azure AD DS](img\Azure-AD-DS.png)
+
 ### Autenticação
 
 - Processo de estabelecer a identidade de uma pessoa, um serviço ou um dispositivo
@@ -372,6 +434,11 @@ Serviço de diretório que permite que você entre e acesse aplicativos de nuvem
   - Windows Hello para Empresas
   - Aplicativo Microsoft Authenticator
   - Chaves de segurança FIDO2
+
+### Autorização
+
+- Determina o nível de acesso de uma pessoa ou serviço autenticado
+- Define quais dados eles podem acessar e o que podem fazer com eles
 
 ### Identidades externas do Azure
 
@@ -421,6 +488,8 @@ Uma identidade externa é uma pessoa, um dispositivo, um serviço etc. que está
   - Computação
   - Aplicativo
   - Dados
+
+![Defesa em Profundidade](img\Defesa-Profundidade.png)
 
 ### Microsoft Defender para Nuvem
 
@@ -509,6 +578,8 @@ Uma identidade externa é uma pessoa, um dispositivo, um serviço etc. que está
 
 - O ARM é o serviço de implantação e gerenciamento do Azure que permite criar, atualizar e excluir recursos em sua conta do Azure
 - Gerenciar a infraestrutura por meio de modelos declarativos em vez de scripts. Um modelo do ARM é um arquivo JSON que define o que será implantado no Azure
+
+![ARM](img\Azure-Resource-Manager.png)
 
 ### Modelos do ARM (IaC)
 
