@@ -214,6 +214,8 @@ Fornecem um nível de escopo acima das assinaturas.
     (proteção contra falha de rack - energia/rede)
 - Não há nenhum custo adicional para configurar um Conjunto de Disponibilidade
 
+![Availability Set](img/Availability-Set.png)
+
 ### Casos de uso de VMs
 
 - Durante o teste e o desenvolvimento de aplicações
