@@ -320,13 +320,17 @@ Fornecem um nível de escopo acima das assinaturas.
 - Namespace exclusivo acessados de qualquer lugar do mundo por HTTP ou HTTPS
     (nome de conta exclusivo no Azure)
 - Dados seguros, altamente disponíveis, duráveis e maciçamente escalonáveis
-- Opções de redundância de armazenamento:
+- Opções de redundância de armazenamento (replicação):
   - (LRS) Armazenamento com redundância local
   - (GRS) Armazenamento com redundância geográfica
   - (RA-GRS) Armazenamento com redundância geográfica com acesso de leitura
   - (ZRS) Armazenamento com redundância de zona
   - (GZRS) Armazenamento com redundância de zona geográfica
   - (RA-GZRS) armazenamento com redundância de zona geográfica com acesso de leitura
+
+![Storage Account Replica](img/Storage-Account-replica1.png)
+
+![Storage Account Replica](img/Storage-Account-replica2.png)
 
 Os dados são sempre replicados três vezes na região primária de maneira síncrona (local ou por zona).
 Você pode selecionar a região primária para a conta; a região secundária emparelhada é baseada nos Pares de Região do Azure e não pode ser alterada.
